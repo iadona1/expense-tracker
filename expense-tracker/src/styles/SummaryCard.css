@@ -1,0 +1,34 @@
+.summary-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  flex: 1;
+}
+
+.summary-card--income {
+  border-left: 3px solid var(--green);
+}
+
+.summary-card--expense {
+  border-left: 3px solid var(--red);
+}
+
+.summary-card--default {
+  border-left: 3px solid var(--accent);
+}
+
+.summary-card__title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.summary-card__value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
