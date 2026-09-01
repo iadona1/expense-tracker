@@ -1,6 +1,11 @@
 import { useEffect } from "react";
 import "../styles/Toast.css";
-import type { ToastMessage, ToastProps } from "../types/toast";
+import type { ToastMessage } from "../types/toast";
+
+interface ToastProps {
+  toasts: ToastMessage[];
+  onRemove: (id: number) => void;
+}
 
 export default function Toast({ toasts, onRemove }: ToastProps) {
   return (
